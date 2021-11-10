@@ -3,7 +3,7 @@ const settings = {
    state: {
       frontity: {
          url: "https://dev-openlearnx.pantheonsite.io",
-         title: "Test Frontity Blog",
+         title: "OpenLearnX",
          description: "WordPress installation for Frontity development",
       },
    },
@@ -31,6 +31,18 @@ const settings = {
       state: {
          source: {
             url: "https://dev-openlearnx.pantheonsite.io",
+            postTypes: [
+               {
+                  type: "webinar",
+                  endPoint: "webinar",
+                  archive: "/webinar"
+               },
+               {
+                  type: "showcase",
+                  endPoint: "showcase",
+                  archive: "/showcase"
+               }
+            ]
          },
       },
    },

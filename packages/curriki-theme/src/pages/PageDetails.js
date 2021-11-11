@@ -6,7 +6,7 @@ const PageDetails = ({ state, element }) => {
    const page = state.source[data.type][data.id]
    return (
       <>
-         <h2>{page.title.rendered}</h2>
+         {/* <h2>{page.title.rendered}</h2> */}
          <div dangerouslySetInnerHTML={{ __html: page.content.rendered }} />
       </>
    )

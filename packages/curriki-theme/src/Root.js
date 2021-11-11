@@ -7,10 +7,6 @@ import Posts from "./pages/Blog/Posts";
 import PostDetails from "./pages/Blog/PostDetails";
 import PageDetails from "./pages/PageDetails";
 
-//Patternfly
-import { Card, CardTitle, CardBody, CardFooter } from '@patternfly/react-core';
-import "@patternfly/patternfly/components/Card/card.css";
-
 const Root = ({ state, actions }) => {
    const data = state.source.get(state.router.link)
 
@@ -22,11 +18,6 @@ const Root = ({ state, actions }) => {
       <>
          <Base/>
          <Header />
-         {/* <Card>
-            <CardTitle>Header</CardTitle>
-            <CardBody>Body</CardBody>
-            <CardFooter>Footer</CardFooter>
-         </Card> */}
          { data.isFetching && <p>Loading...</p> }
          { data.isHome && <Posts/> }
          { data.isPost && <PostDetails/> }

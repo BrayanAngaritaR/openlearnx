@@ -2,7 +2,7 @@ const settings = {
    name: "fronty",
    state: {
       frontity: {
-         url: "https://dev-openlearnx.pantheonsite.io",
+         url: "https://developer-wp.curriki.org/",
          title: "OpenLearnX",
          description: "WordPress installation for Frontity development",
       },
@@ -30,7 +30,7 @@ const settings = {
       name: "@frontity/wp-source",
       state: {
          source: {
-            url: "https://dev-openlearnx.pantheonsite.io",
+            url: "https://developer-wp.curriki.org/",
             postTypes: [
                {
                   type: "webinar",
